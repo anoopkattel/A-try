@@ -1,0 +1,27 @@
+*{
+	font-family: 'Open Sans';
+}
+body{
+	background-color: #81DAF5;
+}
+p{
+	color: red;
+}
+#name,#time,#sleep{
+	padding: 20px;
+	border-radius: 20px;
+	background-color: #A9E2F3;
+}
+::placeholder {
+  color: #1C1C1C;
+  font-family: 'Open Sans';
+  font-size: 15px;
+  opacity: 1; /* Firefox */
+}
+#send,#send2,#send3{
+	padding: 15px;
+	font-size: 15px;
+	border-radius: 20px;
+	border :none;
+	box-shadow: 0px 0px 3px 0px ;
+}

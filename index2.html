@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Program</title>
+	<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+<center>
+	<p>Please fill one by one.</p>
+			<input id="name" type="text" placeholder="Enter your first name" name="">
+			<button id="send" onclick="send()">Send</button>
+			<h2 id="fname"></h2>
+			<input type="number" id="time" placeholder="" name="">
+			<button onclick="send1()" id="send2">Send</button>
+			<h2 id="ftime"></h2>
+			<h2 id="time1"></h2>
+			<input type="number" id="sleep" name="">
+			<button onclick="sleep()" id="send3">Send</button>
+			<h2 id="sleeptime"></h2>
+<script>
+				function send(){
+					var a = document.getElementById('name').value;
+					document.getElementById('fname').innerHTML = ("Kati bajey uthis? "+a);
+				}				
+</script>
+<script>
+			function send1(){
+				var b = document.getElementById('time').value;
+				if (b<=4)
+				document.getElementById('ftime').innerHTML = ("Kati chadai uthya talai narak");
+			else if (b<=7)
+				document.getElementById('ftime').innerHTML = ("La thik garis good");
+			else if (b<=12)
+				document.getElementById('ftime').innerHTML = ("Talai goru kati sutxas");
+			document.getElementById('time1').innerHTML = ("Kati bajey sutya this?");
+
+			}
+</script>
+<script>
+					function sleep(){
+						var c = document.getElementById('sleep').value;
+						if (c<=7)
+						document.getElementById('sleeptime').innerHTML=("kati dhilo sutya murdar marlas ");
+					else if (c>7 && c<=9)
+						document.getElementById('sleeptime').innerHTML=("La thik garis");
+					else 
+					document.getElementById('sleeptime').innerHTML=("Morlas murdar chadai sutni gar");
+
+					}
+</script>
+</center>
+
+</body>
+</html>
